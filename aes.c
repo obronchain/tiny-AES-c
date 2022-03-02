@@ -37,7 +37,7 @@ NOTE:   String length must be evenly divisible by 16byte (str_len % 16 == 0)
 /*****************************************************************************/
 #include "aes.h"
 
-void memcpy(char *x, const char *y, long unsigned len){
+void memcpy(unsigned char *x, const unsigned char *y, long unsigned len){
   for(long unsigned i = 0; i < len; i++){
     x[i] = y[i];
   }
