@@ -35,9 +35,13 @@ NOTE:   String length must be evenly divisible by 16byte (str_len % 16 == 0)
 /*****************************************************************************/
 /* Includes:                                                                 */
 /*****************************************************************************/
-#include <string.h> // CBC mode, for memset
 #include "aes.h"
 
+void memcpy(char *x, const char *y, long unsigned len){
+  for(long unsigned i = 0; i < len; i++){
+    x[i] = y[i];
+  }
+}
 /*****************************************************************************/
 /* Defines:                                                                  */
 /*****************************************************************************/
